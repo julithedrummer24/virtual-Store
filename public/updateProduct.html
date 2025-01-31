@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icono.png" type="image/x-icon">
+    <title>Update Virual Product</title>
+</head>
+<body>
+
+
+    <main class="editarProducto">
+
+        <div class="atras">
+            <a href="./">
+                <p>HOME</p>
+            </a>
+        </div>
+    
+        <div class="formulario">
+            <form method="dialog">
+                <section>
+                    <input type="text" id="searchInput" placeholder="search id product">
+                </section>
+            </form>
+        </div>
+
+        <div class="mensaje-error" id="errorMessage">No se encontró el producto</div>
+
+        <div class="baseDatos">
+            <div class="productos" tabindex="0">
+                <table>
+                    <caption>edicion de productos</caption>
+                    <thead>
+                        <tr>
+                            <th>id- producto</th>
+                            <th>producto</th>
+                            <th>descripción</th>
+                            <th>precio</th>
+                            <th>Cantidad en bodega</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td contenteditable="true">televisor 20"</td>
+                            <td contenteditable="true">televisor samsung 20" incluye TDT, base para pared</td>
+                            <td contenteditable="true">1'200.000</td>
+                            <td contenteditable="true">10</td>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+        </div>
+        <div class="edicion">
+            <button id="update" class="update" style="--colorBoton: green; background-color:var(--colorBoton);">Update product</button>
+            <button id="delete" class="delete" style="--colorBoton: red; background-color:var(--colorBoton);">Delete product</button>
+        </div>
+    
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
